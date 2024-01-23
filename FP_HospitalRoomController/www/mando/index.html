@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Seagull Remote</title>
+</head>   
+
+<body>
+  <header class="header">
+    <a href="../selector_videos/index.html"><button class="boton_volver"><img src="../multimedia/btn-izq.png"></button></a>
+    <a href="/index.html">
+    <img src="../multimedia/logo.png" alt="logo" class="header-logo">
+  </a>
+    <h1 class="header-title">Seagull Remote</h1>
+</header>
+
+<div class="popup">
+  <div class="popup-content">
+    <button class="popup-close-btn">X</button>
+    <h2>Instrucciones de uso:</h2>
+<ul>
+  <li><strong>Pad táctil:</strong>
+    <ul>
+      <li>Deslizar hacia arriba para pausar/reanudar el video</li>
+      <li>Deslizar hacia la izquierda/derecha para bajar/subir el volumen</li>
+    </ul>
+  </li>
+  <li><strong>Rotación del dispositivo:</strong>
+    <ul>
+      <li>Rotar a la derecha para avanzar en la reproducción</li>
+      <li>Rotar a la izquierda para retroceder en la reproducción</li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</div>
+
+<main class="pantalla_control">
+   <button class="boton_retroceder" onclick="retroceder()"><img src="../multimedia/retroceder.png"></button>
+   <button class="boton_play_pause" onclick="pausarReanudar()"><img src="../multimedia/boton-de-play.png"></button>
+   <button class="boton_adelantar" onclick="adelantar()"><img src="../multimedia/adelantar.png"></button>
+   <button class="boton_microfono" id="boton_microfono" onclick="control_voz()"><img src="../multimedia/control-voz.png"></button>
+</main>
+
+<div class="pad-tactil">
+  <p>Pad táctil</p>
+</div>
+
+
+
+  <footer class="footer">
+    <button class="footer-button" onclick="aviso()"> <img src="../multimedia/bell-icon.png"></button>
+    <button class="footer-button" onclick="EncenderApagarLinterna()"><img src="../multimedia/light-icon.png"></button>
+    <button class="footer-button"><img src="../multimedia/settings-icon.png"></button>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

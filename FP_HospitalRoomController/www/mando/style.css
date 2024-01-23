@@ -1,0 +1,234 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #E8F2F4; /* color de fondo de la página */
+}
+
+
+.header {
+  background-color: #008080; 
+  color: white;
+  text-align: center;
+  padding: 0.4em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -2%;
+}
+
+.header h1 {
+  font-size: 1.2em; /* ajusta el valor según lo necesites */
+}
+
+
+
+.header-logo {
+  max-width: 100px;
+  margin-right: em;
+}
+
+.header-logo img {
+  max-width: 80px; /* ajusta el valor según lo necesites */
+}
+
+
+
+.pantalla_control {
+  position: fixed;
+  top: 70px; /* Ajustar según el espacio que se quiera dejar entre los botones y el header */
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around; /* Modificar para ajustar el espaciado entre los botones */
+}
+
+
+.boton_play_pause {
+  margin-top: 40px
+  border-color: black;
+  background-color: #E8F2F4;
+  border-style: 10px;
+  border-radius: 40%;
+  width: 70px; 
+  height: 70px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+.boton_adelantar {
+  border-color: #000000;
+  background-color: #E8F2F4;
+  border-style: 10px;
+  border-radius: 40%;
+  width: 70px; 
+  height: 70px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+.boton_retroceder {
+  border-color: #030303;
+  background-color: #E8F2F4;
+  border-style: 10px;
+  border-radius: 40%;
+  width: 70px; 
+  height: 70px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+
+
+.boton_microfono {
+  border-color: #030303;
+  background-color: #E8F2F4;
+  border-style: 10px;
+  border-radius: 40%;
+  width: 70px; 
+  height: 70px; 
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #008080; 
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -2%;
+  
+}
+
+.footer-button {
+  background-color: white;
+  border: none;
+  padding: 1em;
+  border-radius: 40%;
+  width: 70px; 
+  height: 70px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+.footer-button img {
+  width: 75%;
+}
+
+/* Se reduce el espacio entre los botones */
+.footer-button:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.boton_volver {
+  border-color: #030303;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0.4em;
+  left: 0.2em;
+  width: 50px;
+  height: 50px;
+}
+
+.boton_volver img {
+  width: 240%;
+}
+
+.boton_retroceder, .boton_play_pause, .boton_adelantar, .boton_microfono {
+  background-color: white;
+  border-color: #030303;
+  padding: 0.3em;
+  border-radius: 40%;
+  width: 65px; 
+  height: 65px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Fondo semi-transparente */
+}
+
+.popup-content {
+  background-color: #E8F2F4; /* Color de fondo de la página */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%; /* Ancho del popup */
+  height: 60%; /* Alto del popup */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #008080; /* Color de fondo de los botones del footer */
+  color: #fff; /* Color de texto de los botones del footer */
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.pad-tactil {
+  position: fixed;
+  top: 200px; /* Ajustar según la posición deseada */
+  bottom: 120px; /* Ajustar según la posición deseada */
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+
